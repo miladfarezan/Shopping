@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "vazir-font";
+  src: url("./font/Vazirmatn-UI-FD-Light.woff2");
+}
+body {
+  font-family: "vazir-font";
+}
