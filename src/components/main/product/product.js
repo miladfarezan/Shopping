@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 import "./product.css";
 
@@ -32,24 +33,22 @@ const Product = (props) => {
   const setDataToStorage = (data) => {
     window.localStorage.setItem("cart", JSON.stringify(data));
   };
-  const getCart = window.localStorage.getItem("cart");
-  const cart = JSON.parse(getCart);
-  const totalItems =
-    cart === null
-      ? []
-      : cart.map((item) => {
-          return item.amount;
-        });
-  const sum = totalItems.reduce((partialSum, a) => partialSum + a, 0);
+
   return (
     <div className="product">
       <div className="container-product">
-        <div className="container-image">
-          <img src={props.img} className="image" alt="Image Not Found" />
-        </div>
+        <Link to={`/product/${props.id}`} className="link-product">
+          <div className="container-image">
+            <img src={props.img} className="image" alt={props.alt} />
+          </div>
+        </Link>
         <div className="descriptions">
-          <h3 className="title-product">{props.name}</h3>
-          <h3 className="product-description">مشخصات:</h3>
+          <Link to={`/product/${props.id}`} className="link-product">
+            <h3 className="title-product">{props.name}</h3>
+          </Link>
+          <Link to={`/product/${props.id}`} className="link-product">
+            <h3 className="product-description">مشخصات:</h3>
+          </Link>
           <p className="info-product">{props.info}</p>
           <h4 className="price-product">
             {`قیمت : ` +

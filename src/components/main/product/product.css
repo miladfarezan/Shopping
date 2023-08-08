@@ -9,6 +9,9 @@
   transition: all 0.3s;
   position: relative;
 }
+.link-product {
+  text-decoration: none;
+}
 .product:hover {
   margin: -10px auto 60px auto;
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.8);
