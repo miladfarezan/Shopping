@@ -1,0 +1,22 @@
+export const SliderDataImageCameraEos850 = [
+  {
+    image:
+      "/images/image-camera-eos850/240_F_52383029_103AikCDILmBTwHxFqHIbMsWgSyaiPpZ.jpg",
+  },
+  {
+    image:
+      "/images/image-camera-eos850/200bde42706357fd8f5a07b8e1a4209aa46ac914_1632236129.jpg",
+  },
+  {
+    image:
+      "/images/image-camera-eos850/7e1f1454e8208eb093b0cfcbaaa8eea882e9c076_1632236128.jpg",
+  },
+  {
+    image:
+      "/images/image-camera-eos850/8fefee27206962e3715a78367f9041518cecef9c_1632236130.jpg",
+  },
+  {
+    image:
+      "/images/image-camera-eos850/b913a006840394654f9700c23b5a0bb2370739d0_1632236125.jpg",
+  },
+];

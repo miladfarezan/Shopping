@@ -25,7 +25,6 @@
   justify-content: space-between;
   /* align-items: spase-between; */
   box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
-
   border-radius: 15px;
   padding: 15px 5px;
 }
@@ -97,10 +96,27 @@
   color: #f13434;
 }
 .total-price {
-  padding-top: 30px;
+  padding-top: 20px;
   border-top: 1px solid #c0c0c0;
   margin-top: 55px;
   text-align: center;
+}
+.btn-clear-cart {
+  border: none;
+  outline: none;
+  font: inherit;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+  cursor: pointer;
+  background-color: #ef4056;
+  color: #fff;
+  /* width: 80%; */
+  margin-left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  margin-top: 20px;
 }
 @media screen and (max-width: 1300px) {
   .cart-box {

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import "./cart.css";
 import Header from "../header/header";
+import { Link } from "react-router-dom";
 
 const Cart = () => {
   const getCart = window.localStorage.getItem("cart");
@@ -20,7 +21,7 @@ const Cart = () => {
   const result = new Intl.NumberFormat("en-US", { style: "decimal" }).format(
     totalPriceAllProducts
   );
-  const [cartItems] = useState(getDataFromStorage());
+  let [cartItems, setCartItems] = useState(getDataFromStorage());
 
   function getDataFromStorage() {
     return JSON.parse(localStorage.getItem("cart") || "[]");
@@ -30,7 +31,42 @@ const Cart = () => {
   });
 
   const sum = totalItems.reduce((partialSum, a) => partialSum + a, 0);
-
+  function increseCartItemHandler(event) {
+    const id = event.target.id;
+    const product = cartItems.find((item) => {
+      return item.id === Number(id);
+    });
+    setCartItems([...cartItems]);
+    product.amount += 1;
+    localStorage.setItem("cart", JSON.stringify(cartItems, product));
+  }
+  function decreseCartItemHandler(event) {
+    const id = event.target.id;
+    const product = cartItems.find((item) => {
+      return item.id === Number(id);
+    });
+    if (product.amount === 1) {
+      return 1;
+    } else {
+      setCartItems([...cartItems]);
+      product.amount -= 1;
+    }
+    localStorage.setItem("cart", JSON.stringify(cartItems, product));
+  }
+  function removeProductHandler(event) {
+    const id = event.target.id;
+    const product = cartItems.findIndex((item) => {
+      return item.id === Number(id);
+    });
+    cartItems.splice(product, 1);
+    setCartItems([...cartItems]);
+    localStorage.setItem("cart", JSON.stringify(cartItems, product));
+  }
+  function clearCart() {
+    cartItems = [];
+    setCartItems(cartItems);
+    localStorage.setItem("cart", JSON.stringify(cartItems));
+  }
   return (
     <div>
       <Header sum={sum} />
@@ -61,17 +97,29 @@ const Cart = () => {
                                 }).format(item.price) +
                                 ` تومان`}
                             </p>
-                            <button className="btn-remove-cart-box-item">
+                            <button
+                              className="btn-remove-cart-box-item"
+                              id={item.id}
+                              onClick={removeProductHandler}
+                            >
                               حذف
                             </button>
                           </div>
                         </div>
                         <div className="container-amount-cart-item-box">
-                          <i className="fa fa-plus"></i>
+                          <i
+                            className="fa fa-plus"
+                            id={item.id}
+                            onClick={increseCartItemHandler}
+                          ></i>
                           <h2 className="amount-cart-box-item">
                             {item.amount}
                           </h2>
-                          <i className="fa fa-minus"></i>
+                          <i
+                            className="fa fa-minus"
+                            id={item.id}
+                            onClick={decreseCartItemHandler}
+                          ></i>
                         </div>
                       </div>
                     </div>
@@ -80,6 +128,11 @@ const Cart = () => {
 
             <div className="footer-cart-box">
               <h3 className="total-price"> مجموع قیمت : {result} تومان </h3>
+              <Link to={"/"}>
+                <button className="btn-clear-cart" onClick={clearCart}>
+                  حذف محصولات
+                </button>
+              </Link>
             </div>
           </div>
         </div>

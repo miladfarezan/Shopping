@@ -1,0 +1,22 @@
+export const SliderDataLaptopMack = [
+  {
+    image:
+      "/images/laptop-mack/240_F_42287320_YpdImQtDHDLFksp43sG8ZKFvO0odoSEC.jpg",
+  },
+  {
+    image:
+      "/images/laptop-mack/af721d40083c821921d627b295a386766b40dbc6_1683368593.jpg",
+  },
+  {
+    image:
+      "/images/laptop-mack/bc701b601cd5859fd7c2492550bee51fd6ad6c77_1683368592.jpg",
+  },
+  {
+    image:
+      "/images/laptop-mack/e2c6a2ce9c4dd5f88aaadd4b29b3221a8057e378_1683368593.jpg",
+  },
+  {
+    image:
+      "/images/laptop-mack/f6b983f71540793d4007160164f747499cecbc44_1683368594.jpg",
+  },
+];

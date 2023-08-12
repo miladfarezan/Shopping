@@ -1,0 +1,22 @@
+export const SliderDataPower10400m = [
+  {
+    image:
+      "/images/power-10400m/240_F_213329116_ZmDVbuM75dldZbeyVCiLurdhM9OHdZm2.jpg",
+  },
+  {
+    image:
+      "/images/power-10400m/Xiaomi-10000mAh-Mi-18W-Fast-Charging-Power-Bank-3-Dual-Output-plm13zm-2.jpg",
+  },
+  {
+    image:
+      "/images/power-10400m/Xiaomi-10000mAh-Mi-18W-Fast-Charging-Power-Bank-3-Dual-Output-plm13zm-3.jpg",
+  },
+  {
+    image:
+      "/images/power-10400m/Xiaomi-10000mAh-Mi-18W-Fast-Charging-Power-Bank-3-Dual-Output-plm13zm-4.jpg",
+  },
+  {
+    image:
+      "/images/power-10400m/Xiaomi-10000mAh-Mi-18W-Fast-Charging-Power-Bank-3-Dual-Output-plm13zm-5.jpg",
+  },
+];

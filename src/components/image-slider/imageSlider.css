@@ -1,0 +1,142 @@
+.slider {
+  position: relative;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.image {
+  border-radius: 10px;
+  /* width: 100%;
+  height: 100%; */
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: -40%;
+  font-size: 3rem;
+  color: #b4b4b4;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+}
+.right-arrow:hover {
+  color: #b76c6c;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: -40%;
+  font-size: 3rem;
+  color: #b4b4b4;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.3s;
+}
+.left-arrow:hover {
+  color: #b76c6c;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 1s ease;
+}
+
+.slide.active {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition-duration: 2s;
+  transform: scale(1);
+  margin-top: 20px;
+}
+@media screen and (max-width: 1300px) {
+  .right-arrow {
+    right: -30%;
+  }
+  .left-arrow {
+    left: -30%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .right-arrow {
+    right: -25%;
+  }
+  .left-arrow {
+    left: -25%;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .right-arrow {
+    right: -20%;
+  }
+  .left-arrow {
+    left: -20%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .right-arrow {
+    right: 0;
+    font-size: 2rem;
+    top: -15%;
+  }
+  .left-arrow {
+    left: 0;
+    font-size: 2rem;
+    top: -15%;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .right-arrow {
+    right: 0;
+    font-size: 2rem;
+    top: -15%;
+  }
+  .left-arrow {
+    left: 0;
+    left: 0;
+    font-size: 2rem;
+    top: -15%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .slider {
+    width: 500px;
+    height: 320px;
+    min-height: 320px;
+    min-width: 500px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .slider {
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+    min-width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider {
+    width: 100%;
+    height: 250px;
+    min-height: 250px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .slider {
+    width: 300px;
+    height: 250px;
+    min-height: 250px;
+    min-width: 300px;
+    /* max-width: 200px; */
+  }
+}

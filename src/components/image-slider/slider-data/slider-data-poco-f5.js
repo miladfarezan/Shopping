@@ -1,0 +1,22 @@
+export const SliderDataPocoF5 = [
+  {
+    image:
+      "/images/poco-f5/240_F_178962989_zaG8LHdzwBSkSgg965clXYzSYJBKQIvG.jpg",
+  },
+  {
+    image:
+      "/images/poco-f5/6e92cfae3c7cb6e8807adc1790e2bd82d5da5101_1686050795.jpg",
+  },
+  {
+    image:
+      "/images/poco-f5/a109913eee4e19ac327c241c987f930a77c653e7_1686050791.jpg",
+  },
+  {
+    image:
+      "/images/poco-f5/cae7ebfcb5c610e69ce13a7cfd38d932ebf2a682_1686050794.jpg",
+  },
+  {
+    image:
+      "/images/poco-f5/dc437c14319cedc2071e68831e69c499d6db6bd4_1686050788.jpg",
+  },
+];
