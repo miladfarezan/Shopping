@@ -6,6 +6,7 @@ import Main from "./components/main/main";
 import Cart from "./components/cart/cart";
 import Footer from "./components/footer/footer";
 import ProductInfo from "./components/productInfo/productInfo";
+import useDarkMode from "./components/hooks/dark-mode";
 
 const App = () => {
   return (

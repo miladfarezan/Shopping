@@ -68,18 +68,54 @@ const Cart = () => {
     localStorage.setItem("cart", JSON.stringify(cartItems));
   }
   return (
-    <div>
+    <div
+      className="cart"
+      style={{
+        background:
+          window.localStorage.getItem("theme") === "light" ? "#fff" : "#000",
+      }}
+    >
       <Header sum={sum} />
-      <div className="cart-box">
+      <div
+        className="cart-box"
+        style={{
+          background:
+            window.localStorage.getItem("theme") === "light" ? "#fff" : "#000",
+          border:
+            window.localStorage.getItem("theme") === "light"
+              ? "nonr "
+              : "1px solid #666666",
+          borderBottom: "none",
+          borderTop: "none",
+        }}
+      >
         <div className="container-cart-box">
-          <h2 className="cart-box-title">سبد خرید</h2>
+          <h2
+            className="cart-box-title"
+            style={{
+              color:
+                window.localStorage.getItem("theme") === "light"
+                  ? "#000"
+                  : "#fff",
+            }}
+          >
+            سبد خرید
+          </h2>
           <div className="cart-box-items">
             {cart === null
               ? []
               : cart.map((item) => {
                   return (
                     <div key={item.id}>
-                      <div className="container-cart-box-item">
+                      <div
+                        className="container-cart-box-item"
+                        style={{
+                          border:
+                            window.localStorage.getItem("theme") === "light"
+                              ? "nonr "
+                              : "1px solid #666666",
+                        }}
+                      >
                         <div className="container-image-cart-box-item-and-description">
                           <div className="container-image-cart-box-item">
                             <img
@@ -89,8 +125,28 @@ const Cart = () => {
                             ></img>
                           </div>
                           <div className="container-description-cart-box">
-                            <h3 className="title-cart-box-item">{item.name}</h3>
-                            <p className="price-cart-box-item">
+                            <h3
+                              className="title-cart-box-item"
+                              style={{
+                                color:
+                                  window.localStorage.getItem("theme") ===
+                                  "light"
+                                    ? "#000"
+                                    : "#fff",
+                              }}
+                            >
+                              {item.name}
+                            </h3>
+                            <p
+                              className="price-cart-box-item"
+                              style={{
+                                color:
+                                  window.localStorage.getItem("theme") ===
+                                  "light"
+                                    ? "#000"
+                                    : "#a6a6a6",
+                              }}
+                            >
                               {`قیمت : ` +
                                 new Intl.NumberFormat("en-US", {
                                   style: "decimal",
@@ -112,7 +168,15 @@ const Cart = () => {
                             id={item.id}
                             onClick={increseCartItemHandler}
                           ></i>
-                          <h2 className="amount-cart-box-item">
+                          <h2
+                            className="amount-cart-box-item"
+                            style={{
+                              color:
+                                window.localStorage.getItem("theme") === "light"
+                                  ? "#000"
+                                  : "#fff",
+                            }}
+                          >
                             {item.amount}
                           </h2>
                           <i
@@ -127,7 +191,18 @@ const Cart = () => {
                 })}
 
             <div className="footer-cart-box">
-              <h3 className="total-price"> مجموع قیمت : {result} تومان </h3>
+              <h3
+                className="total-price"
+                style={{
+                  color:
+                    window.localStorage.getItem("theme") === "light"
+                      ? "#000"
+                      : "#fff",
+                }}
+              >
+                {" "}
+                مجموع قیمت : {result} تومان{" "}
+              </h3>
               <Link to={"/"}>
                 <button className="btn-clear-cart" onClick={clearCart}>
                   حذف محصولات
