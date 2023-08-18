@@ -81,15 +81,17 @@ const Cart = () => {
         style={{
           background:
             window.localStorage.getItem("theme") === "light" ? "#fff" : "#000",
-          border:
-            window.localStorage.getItem("theme") === "light"
-              ? "nonr "
-              : "1px solid #666666",
-          borderBottom: "none",
-          borderTop: "none",
         }}
       >
-        <div className="container-cart-box">
+        <div
+          className="container-cart-box"
+          style={{
+            border:
+              window.localStorage.getItem("theme") === "light"
+                ? "nonr "
+                : "1px solid #666666",
+          }}
+        >
           <h2
             className="cart-box-title"
             style={{

@@ -6,7 +6,7 @@ import Main from "./components/main/main";
 import Cart from "./components/cart/cart";
 import Footer from "./components/footer/footer";
 import ProductInfo from "./components/productInfo/productInfo";
-import useDarkMode from "./components/hooks/dark-mode";
+import Account from "./components/account/account";
 
 const App = () => {
   return (
@@ -16,6 +16,7 @@ const App = () => {
         <Route path="/" Component={Main} exact />
         <Route path="/cart" Component={Cart} exact />
         <Route path="/product/:id" Component={ProductInfo} />
+        <Route path="/account" Component={Account} />
       </Routes>
       <Footer />
     </Router>

@@ -1,0 +1,95 @@
+.container-form-box {
+  direction: rtl;
+  width: 100%;
+  height: 100%;
+  margin-top: 80px;
+  padding: 70px 0;
+}
+.form-box {
+  margin: 0 auto;
+  width: 600px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
+}
+@media screen and (max-width: 650px) {
+  .form-box {
+    width: 90%;
+  }
+}
+
+.form-box-items {
+  padding: 40px;
+}
+.title-form-box {
+  font-size: 25px;
+}
+@media screen and (max-width: 600px) {
+  .title-form-box {
+    font-size: 20px;
+  }
+}
+.container-input-form-box {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  position: relative;
+  transition: all 0.3s;
+}
+input {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  padding: 0 10px;
+  font-size: 16px;
+  border: 1px solid #c0c0c0;
+  transition: all 0.5s;
+  outline: none;
+}
+@media screen and (max-width: 600px) {
+  input {
+    font-size: 14px;
+  }
+}
+input:focus {
+  border: 1px solid #000000;
+}
+.fa-eye {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 1%;
+  cursor: pointer;
+  font-size: 20px;
+  transition: all 0.3s;
+}
+.btn-form-box {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  font: inherit;
+  outline: none;
+  border: none;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+@media screen and (max-width: 600px) {
+  input {
+    font-size: 14px;
+  }
+}
+.error-email {
+  margin-right: 10px;
+  font-size: 13px;
+  color: #ef4056;
+  padding-top: 5px;
+}
+.error-password {
+  margin-right: 10px;
+  font-size: 13px;
+  color: #ef4056;
+  padding-top: 5px;
+}

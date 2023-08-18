@@ -6,13 +6,14 @@
   background-color: #fff;
   width: 70%;
   height: auto;
-  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
   margin: 80px auto 0 auto;
   padding: 40px 0;
 }
 
 .container-cart-box {
-  padding: 20px 40px 40px 40px;
+  padding: 40px;
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 15px;
 }
 .cart-box-title {
   text-align: center;
