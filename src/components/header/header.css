@@ -41,7 +41,6 @@
   border-bottom: solid 3px #ffffff;
   transform: scaleX(0) translateY(15px);
   transition: transform 300ms ease-in-out;
-  /* transform:  */
 }
 .header-item:hover:after {
   transform: scaleX(1) translateY(15px);

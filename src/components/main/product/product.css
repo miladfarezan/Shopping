@@ -1,17 +1,3 @@
-.btn-theme-cart {
-  /* margin-top: 100px; */
-  position: absolute;
-  top: 90px;
-  left: 50%;
-  transform: translateX(-50%);
-  outline: none;
-  border: none;
-  background: none;
-  font-weight: bold;
-  font-size: 18px;
-  cursor: pointer;
-}
-
 .container-product {
   padding: 20px;
 }

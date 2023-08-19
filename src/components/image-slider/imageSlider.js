@@ -18,11 +18,10 @@ import { SliderDataIphoneS4 } from "./slider-data/slider-data-iphone-s4";
 import { SliderDataTabletIphone } from "./slider-data/slider-data-tablet-iphone";
 
 import "./imageSlider.css";
-// import { SliderDataLaptopMack } from "./slider-data/slider-data-laptop-mack";
 
 const ImageSlider = ({ slides }) => {
   const params = useParams().id;
-  console.log(params);
+
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
