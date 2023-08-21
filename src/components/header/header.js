@@ -33,7 +33,7 @@ const Header = (props) => {
               <div
                 className="hamburger-menu-item"
                 style={{
-                  transform: hamburgerMenu === true ? "rotate(-40deg)" : "none",
+                  transform: hamburgerMenu === true ? "rotate(-45deg)" : "none",
                 }}
               ></div>
               <div
@@ -45,7 +45,7 @@ const Header = (props) => {
               <div
                 className="hamburger-menu-item"
                 style={{
-                  transform: hamburgerMenu === true ? "rotate(41deg)" : "none",
+                  transform: hamburgerMenu === true ? "rotate(45deg)" : "none",
                 }}
               ></div>
             </div>
