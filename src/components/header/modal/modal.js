@@ -24,7 +24,7 @@ function Modal(props) {
             ورود به حساب کاربری
           </div>
         </Link>
-        <Link to={"+989392678179"} className="link-modal">
+        <Link to="tel:+989392678179" className="link-modal">
           <div
             className="modal-item modal-support"
             onClick={props.setToggleModal}

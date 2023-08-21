@@ -48,7 +48,7 @@
 
 @media screen and (max-width: 400px) {
   .modal {
-    padding: 0 20px;
+    padding: 0 20px 0.4px 20px;
   }
 }
 @media screen and (min-width: 900px) {

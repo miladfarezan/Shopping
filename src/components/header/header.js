@@ -64,7 +64,7 @@ const Header = (props) => {
             </Link>
           </div>
           <div className="header-items header-support">
-            <Link to="+989392678179" className="header-item">
+            <Link to="tel:+989392678179" className="header-item">
               <i className="fa fa-phone"></i>
               <span className="phone">98</span>9392678179+
             </Link>
