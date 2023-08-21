@@ -3,7 +3,7 @@
   height: auto;
   position: fixed;
   top: 100px;
-  background-color: #1a1a1c;
+  background-color: #323232;
   z-index: 100;
   padding: 0 40px 0.4px 40px;
   direction: rtl;
@@ -38,7 +38,7 @@
   transform: scaleX(1) translateY(21px);
 }
 .modal-icon {
-  padding-right: 0;
+  padding: 0 0 0 15px;
 }
 .link-modal {
   text-decoration: none;

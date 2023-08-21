@@ -21,7 +21,7 @@ const Header = (props) => {
       <div
         className="header"
         style={{
-          background: hamburgerMenu === true ? "#1a1a1a" : "#000000",
+          background: hamburgerMenu === true ? "#323232" : "#000000",
         }}
       >
         <div className="container-header">
@@ -33,7 +33,7 @@ const Header = (props) => {
               <div
                 className="hamburger-menu-item"
                 style={{
-                  transform: hamburgerMenu === true ? "rotate(-41deg)" : "none",
+                  transform: hamburgerMenu === true ? "rotate(-40deg)" : "none",
                 }}
               ></div>
               <div
