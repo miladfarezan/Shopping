@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 import "./cart.css";
-import Header from "../header/header";
+import Header from "../../components/header/header";
 import { Link } from "react-router-dom";
 
 const Cart = () => {

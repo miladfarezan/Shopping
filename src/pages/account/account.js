@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 
 import "./account.css";
-import Header from "../header/header";
+import Header from "../../components/header/header";
 function Account() {
   useEffect(() => {
     setTimeout(() => {
@@ -88,7 +88,7 @@ Password : admin`
                 className="fa fa-light fa-eye"
                 onClick={toggleInputType}
                 style={{
-                  color: inputType === "text" ? "#14454a" : "#858585",
+                  color: inputType === "text" ? "#4d4d4d" : "#858585",
                 }}
               ></i>
               <span

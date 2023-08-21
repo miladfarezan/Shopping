@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { useParams } from "react-router";
 
-import Header from "../header/header";
-import Products from "../products";
+import Header from "../../components/header/header";
+import Products from "../../components/products";
 import "./productInfo.css";
 import ImageSlider from "../../components/image-slider/imageSlider";
-import { SliderDataVideoCamera } from "../image-slider/slider-data/slider-data-video-camera";
+import { SliderDataVideoCamera } from "../../components/image-slider/slider-data/slider-data-video-camera";
 import { Link } from "react-router-dom";
 
 const ProductInfo = () => {

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 
-import "./main.css";
-import Products from "../products";
+import "./home.css";
+import Products from "../../components/products";
 import Product from "./product/product";
-import Header from "../header/header";
+import Header from "../../components/header/header";
 
-const Main = () => {
+const Home = () => {
   const [cartItems, setCartItems] = useState(getDataFromStorage());
   function getDataFromStorage() {
     return JSON.parse(localStorage.getItem("cart") || "[]");
@@ -40,4 +40,4 @@ const Main = () => {
   return content;
 };
 
-export default Main;
+export default Home;
