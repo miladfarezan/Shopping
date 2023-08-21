@@ -35,15 +35,7 @@ const Product = (props) => {
   };
 
   return (
-    <div
-      className="product"
-      style={{
-        border:
-          window.localStorage.getItem("theme") === "light"
-            ? "none"
-            : "1px solid #666666",
-      }}
-    >
+    <div className="product">
       <div className="container-product">
         <Link to={`/product/${props.id}`} className="link-product">
           <div className="container-image">
@@ -52,67 +44,13 @@ const Product = (props) => {
         </Link>
         <div className="descriptions">
           <Link to={`/product/${props.id}`} className="link-product">
-            <h3
-              className="title-product"
-              style={{
-                background:
-                  window.localStorage.getItem("theme") === "light"
-                    ? "#fff"
-                    : "#000",
-                color:
-                  window.localStorage.getItem("theme") === "light"
-                    ? "#000"
-                    : "#fff",
-                border:
-                  window.localStorage.getItem("theme") === "light"
-                    ? "none"
-                    : "1px solid #666666",
-              }}
-            >
-              {props.name}
-            </h3>
+            <h3 className="title-product">{props.name}</h3>
           </Link>
           <Link to={`/product/${props.id}`} className="link-product">
-            <h3
-              className="product-description"
-              style={{
-                color:
-                  window.localStorage.getItem("theme") === "light"
-                    ? "#3a3a3a"
-                    : "#a6a6a6",
-              }}
-            >
-              مشخصات:
-            </h3>
+            <h3 className="product-description">مشخصات:</h3>
           </Link>
-          <p
-            className="info-product"
-            style={{
-              background:
-                window.localStorage.getItem("theme") === "light"
-                  ? "#fff"
-                  : "#000",
-              color:
-                window.localStorage.getItem("theme") === "light"
-                  ? "#000"
-                  : "#787878",
-              border:
-                window.localStorage.getItem("theme") === "light"
-                  ? "none"
-                  : "1px solid #232323",
-            }}
-          >
-            {props.info}
-          </p>
-          <h4
-            className="price-product"
-            style={{
-              color:
-                window.localStorage.getItem("theme") === "light"
-                  ? "#000"
-                  : "#a6a6a6",
-            }}
-          >
+          <p className="info-product">{props.info}</p>
+          <h4 className="price-product">
             {`قیمت : ` +
               new Intl.NumberFormat("en-US", { style: "decimal" }).format(
                 props.price

@@ -45,52 +45,14 @@ Password : admin`
   return (
     <div>
       <Header sum={sum} />
-      <div
-        className="container-form-box"
-        style={{
-          background:
-            window.localStorage.getItem("theme") === "dark" ? "#000" : "#fff",
-        }}
-      >
-        <form
-          className="form-box"
-          style={{
-            border:
-              window.localStorage.getItem("theme") === "dark"
-                ? "1px solid #666666"
-                : "none",
-          }}
-        >
+      <div className="container-form-box">
+        <form className="form-box">
           <div className="form-box-items">
             <div className="container-title-form-box">
-              <h2
-                className="title-form-box"
-                style={{
-                  color:
-                    window.localStorage.getItem("theme") === "dark"
-                      ? "#fff"
-                      : "#000",
-                }}
-              >
-                ورود به حساب کاربری
-              </h2>
+              <h2 className="title-form-box">ورود به حساب کاربری</h2>
             </div>
             <div className="container-input-form-box">
               <input
-                style={{
-                  background:
-                    window.localStorage.getItem("theme") === "dark"
-                      ? "#000"
-                      : "#fff",
-                  color:
-                    window.localStorage.getItem("theme") === "dark"
-                      ? "#fff"
-                      : "#000",
-                  border:
-                    window.localStorage.getItem("theme") === "dark"
-                      ? "1px solid #666666"
-                      : "",
-                }}
                 type="email"
                 placeholder="ایمیل خود را وارد کنید "
                 onChange={(event) => emailHandler(event)}
@@ -105,7 +67,7 @@ Password : admin`
                   fontWeight: "bold",
                 }}
               >
-                آدرس ایمیل نامعتبر است
+                آدرس ایمیل نامعتبر است .
               </span>
             </div>
             <div
@@ -118,20 +80,6 @@ Password : admin`
               }}
             >
               <input
-                style={{
-                  background:
-                    window.localStorage.getItem("theme") === "dark"
-                      ? "#000"
-                      : "#fff",
-                  border:
-                    window.localStorage.getItem("theme") === "dark"
-                      ? "1px solid #666666"
-                      : "",
-                  color:
-                    window.localStorage.getItem("theme") === "dark"
-                      ? "#fff"
-                      : "#000",
-                }}
                 type={inputType}
                 placeholder="رمز عبور خود را وارد "
                 onChange={(event) => passwordHandler(event)}
@@ -151,7 +99,7 @@ Password : admin`
                     password === "" || password === "admin" ? "none" : "block",
                 }}
               >
-                رمز عبور نامعتبر است
+                رمز عبور نامعتبر است .
               </span>
             </div>
 

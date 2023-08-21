@@ -24,13 +24,7 @@ const ProductInfo = () => {
   return (
     <div>
       <Header sum={sum} />
-      <div
-        className="items-product-info"
-        style={{
-          background:
-            localStorage.getItem("theme") === "light" ? "#fff" : "#000",
-        }}
-      >
+      <div className="items-product-info">
         <Link to={"/"} className="btn-back">
           بازگشت به صفحه اصلی
         </Link>
@@ -41,38 +35,10 @@ const ProductInfo = () => {
           />
         </div>
         <div className="container-description-product-info">
-          <h2
-            className="title-product-info"
-            style={{
-              color:
-                window.localStorage.getItem("theme") === "light"
-                  ? "#000"
-                  : "#fff",
-            }}
-          >
-            {product.name}
-          </h2>
-          <h3
-            className="detail-product-info"
-            style={{
-              color:
-                window.localStorage.getItem("theme") === "light"
-                  ? "#3f3f3f"
-                  : "#a6a6a6",
-            }}
-          >
-            مشخصات محصول :
-          </h3>
+          <h2 className="title-product-info">{product.name}</h2>
+          <h3 className="detail-product-info">مشخصات محصول :</h3>
           <i className="fa  fa-arrow-down"></i>
-          <p
-            className="description-product-info"
-            style={{
-              color:
-                window.localStorage.getItem("theme") === "light"
-                  ? "#000"
-                  : "#a6a6a6",
-            }}
-          >
+          <p className="description-product-info">
             {product.description + product.moreDescription}
           </p>
         </div>

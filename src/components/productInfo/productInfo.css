@@ -78,7 +78,7 @@
     min-width: 400px;
   }
   .items-product-info {
-    padding: 0 40px;
+    padding: 40px;
   }
 }
 @media screen and (max-width: 500px) {
@@ -89,7 +89,7 @@
     min-width: 300px;
   }
   .items-product-info {
-    padding: 0 10px;
+    padding: 40px 10px;
   }
   .title-product-info {
     font-size: 20px;

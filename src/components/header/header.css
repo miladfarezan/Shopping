@@ -1,15 +1,18 @@
 .header {
-  background-color: #000000;
-  height: 80px;
+  height: 100px;
   direction: rtl;
   max-width: 1600px;
-  border-bottom: 1px solid #666666;
   position: fixed;
   width: 100%;
   right: 50%;
   top: 0;
   transform: translateX(50%);
   z-index: 100;
+  transition: all 0.3s;
+}
+.phone {
+  font-weight: lighter;
+  color: #efefef;
 }
 .container-header {
   height: 100%;
@@ -21,6 +24,7 @@
 
 .header-items {
   font-size: 18px;
+  z-index: 300;
 }
 .fa {
   padding: 0 10px;
@@ -35,18 +39,20 @@
   text-transform: uppercase;
 }
 .header-item:after {
+  border-bottom: 1px solid #ffffff;
   bottom: 0;
   display: block;
   content: "";
-  border-bottom: solid 3px #ffffff;
-  transform: scaleX(0) translateY(15px);
+  border-bottom: solid 4px #fff;
+  transform: scaleX(0) translateY(31.8px);
   transition: transform 300ms ease-in-out;
+  border-radius: 5px;
 }
 .header-item:hover:after {
-  transform: scaleX(1) translateY(15px);
+  transform: scaleX(1) translateY(31.8px);
 }
 
-.cart {
+.header-cart {
   position: relative;
 }
 .cart-item {
@@ -60,33 +66,48 @@
   font-weight: bold;
   font-size: 13px;
 }
-@media screen and (max-width: 600px) {
-  .container-header {
-    padding: 0 15px;
+
+.hamburger-menu-items {
+  width: 35px;
+  height: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.hamburger-menu-item {
+  width: 100%;
+  height: 10%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  transition: all 0.3s;
+  transform-origin: right;
+}
+@media screen and (max-width: 900px) {
+  .header-home {
+    display: none;
   }
-  .header-items {
-    font-size: 16px;
+  .header-support {
+    display: none;
   }
-  .fa {
-    padding: 0 5px;
-    font-size: 20px;
+  .header-account {
+    display: none;
   }
-  .cart-item {
-    right: -9%;
+  .header-hamburger-menu {
+    display: block;
   }
 }
-@media screen and (max-width: 420px) {
-  .container-header {
-    padding: 0 10px;
+@media screen and (min-width: 900px) {
+  .header-hamburger-menu {
+    display: none;
   }
 }
+
 @media screen and (max-width: 400px) {
   .container-header {
-    padding: 0 5px;
+    padding: 0 20px;
   }
-  .header-items {
-    font-size: 15px;
-  }
+
   .fa {
     padding: 0 3px;
     font-size: 18px;
