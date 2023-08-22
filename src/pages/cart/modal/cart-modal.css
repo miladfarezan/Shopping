@@ -1,0 +1,75 @@
+.cart-modal {
+  width: 50%;
+  background-color: #1a1a1a;
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 15px;
+  z-index: 400;
+  direction: rtl;
+  transition: all 0.3s;
+}
+
+.description-modal {
+  background: #ef4056;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #b8b8b8;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+.total-price-modal {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+.price-modal {
+  color: #fff;
+}
+.fa-dollar {
+  color: #fff;
+  font-size: 30px;
+}
+.cancel-modal {
+  padding: 20px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.description-cancel-modal {
+  color: #c0c0c0;
+  font-weight: 500;
+  font-size: 14px;
+
+  transition: all 1s;
+}
+.cancel-btn {
+  font: inherit;
+  background: none;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  color: #ef4056;
+  font-size: 14px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1300px) {
+  .cart-modal {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .cart-modal {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cart-modal {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .cart-modal {
+    width: 90%;
+  }
+}
