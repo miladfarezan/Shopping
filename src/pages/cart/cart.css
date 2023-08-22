@@ -22,6 +22,10 @@
   width: auto;
   padding-bottom: 55px;
 }
+.title-cart-link {
+  text-decoration: none;
+  color: #000;
+}
 .container-cart-box-item {
   margin: 40px auto 0 auto;
   display: flex;

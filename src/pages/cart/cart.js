@@ -100,17 +100,24 @@ const Cart = () => {
                       <div key={item.id}>
                         <div className="container-cart-box-item">
                           <div className="container-image-cart-box-item-and-description">
-                            <div className="container-image-cart-box-item">
-                              <img
-                                className="img-cart-box-item"
-                                src={item.img}
-                                alt="Not found"
-                              ></img>
-                            </div>
+                            <Link to={`/product/${item.id}`}>
+                              <div className="container-image-cart-box-item">
+                                <img
+                                  className="img-cart-box-item"
+                                  src={item.img}
+                                  alt="Not found"
+                                ></img>
+                              </div>
+                            </Link>
                             <div className="container-description-cart-box">
-                              <h3 className="title-cart-box-item">
-                                {item.name}
-                              </h3>
+                              <Link
+                                to={`/product/${item.id}`}
+                                className="title-cart-link"
+                              >
+                                <h3 className="title-cart-box-item">
+                                  {item.name}
+                                </h3>
+                              </Link>
                               <p className="price-cart-box-item">
                                 {`قیمت : ` +
                                   new Intl.NumberFormat("en-US", {

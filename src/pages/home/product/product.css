@@ -52,9 +52,6 @@ img {
   background-color: #ffffff;
   color: #000000;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
-  /* -ms-overflow-style: none;
-  scrollbar-width: none;
-  overflow-y: hidden; */
 }
 .info-product::-webkit-scrollbar {
   display: block;
@@ -70,7 +67,6 @@ img {
 }
 .product-btn {
   font: inherit;
-  /* width: 100%; */
   width: 100%;
   padding: 10px;
   border: none;
